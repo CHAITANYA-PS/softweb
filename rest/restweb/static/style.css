@@ -1,0 +1,112 @@
+:root{
+  --primary:#D1495B;
+  --secondary:#F2A65A;
+  --accent:#2E4057;
+  --bg:#FFF8F2;
+}
+
+body{
+  background:var(--bg);
+  margin:0;
+  font-family:Arial, sans-serif;
+  color:var(--accent);
+}
+
+.header{
+  background:var(--primary);
+  padding:15px;
+  color:white;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+}
+
+.logo{
+  background:var(--secondary);
+  width:60px;
+  height:60px;
+  display:grid;
+  place-items:center;
+  font-weight:bold;
+  border-radius:10px;
+}
+
+nav ul{
+  list-style:none;
+  display:flex;
+  gap:15px;
+}
+nav a{
+  color:white;
+  text-decoration:none;
+  font-weight:bold;
+}
+nav a.active{
+  text-decoration:underline;
+}
+
+.banner{
+  display:flex;
+  padding:20px;
+  background:linear-gradient(135deg,var(--primary),#b83b4b);
+  color:white;
+}
+.banner img{
+  width:350px;
+  border-radius:15px;
+}
+.hero{flex:1;}
+.quick-links{display:flex;gap:10px;margin-top:15px;}
+.card{
+  background:rgba(255,255,255,0.2);
+  padding:10px 20px;
+  border-radius:10px;
+}
+
+.menu-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+  gap:15px;
+  padding:20px;
+}
+.food-card{
+  background:white;
+  padding:15px;
+  border-radius:10px;
+  box-shadow:0 2px 6px rgba(0,0,0,0.1);
+}
+
+.admin-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+  gap:20px;
+  padding:20px;
+}
+.admin-card{
+  background:white;
+  padding:15px;
+  border-radius:10px;
+  box-shadow:0 2px 6px rgba(0,0,0,0.1);
+}
+.admin-card img{
+  width:80px;
+  height:80px;
+  border-radius:10px;
+  display:block;
+  margin-bottom:10px;
+}
+
+.contact-section{
+  padding:20px;
+  background:white;
+  margin:20px;
+  border-radius:10px;
+  box-shadow:0 2px 6px rgba(0,0,0,0.1);
+}
+
+footer{
+  text-align:center;
+  padding:15px;
+  background:#f7e4e4;
+  margin-top:20px;
+}
